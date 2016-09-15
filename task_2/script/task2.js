@@ -2,7 +2,7 @@ function enterName() {
   //створюємо масив з 5 елементів
   var arr = new Array(5);
   //Циклом заповнюємо масив іменами
-  for (i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++) {
     arr[i] = prompt("Введіть ім'я");
   }
   
@@ -15,7 +15,7 @@ function enterName() {
     } 
   }
   //Якщо ім'я користувача співпало, відповідно змінна validName не буде undefined, в іншому випадку введене ім'я недійсне
-    if (validName != undefined) {
+    if (validName !== undefined) {
     alert(validName + ", ви успійшло ввійшли в систему");
   } else {
     alert("Введене ім'я недійсне");

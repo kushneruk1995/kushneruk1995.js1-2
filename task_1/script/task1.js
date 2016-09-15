@@ -8,20 +8,20 @@ function exponentiation(number, pow) {
   if (pow > 0) {
     result = number;
 
-    for (i = 0; i < pow-1; i++) {
+    for (var i = 0; i < pow-1; i++) {
 	  result = number*result;
     }
 
     console.log(result);
 
-  } else if (pow == 0) {
+  } else if (pow === 0) {
 	  result=1;
 	  console.log(result);
 
   } else if (pow < 0) {
 	  result=1/(number);
 
-	  for (i = -1; i > pow; i--) {
+	  for (var i = -1; i > pow; i--) {
 	    result = result/number;
       }
 
@@ -29,7 +29,7 @@ function exponentiation(number, pow) {
     }
   }
 
-exponentiation(number,pow);
+exponentiation(number, pow);
 
 
 
