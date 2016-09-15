@@ -1,8 +1,15 @@
 var number = prompt("Введіть число, яке необхідно піднести до степіня");
-console.log("число=", number);
-var pow = prompt("Введіть ступінь, до якого необхідно піднести число");
-console.log("степінь=", pow);
-var result;//Змінна, в яку буде записуватись результат
+if (typeof number == number) {
+	console.log(" число=", number);
+	var pow = prompt("Введіть ступінь, до якого необхідно піднести число");
+	console.log(" степінь=", pow);
+	var result;//Змінна, в яку буде записуватись результат
+	exponentiation(number, pow);
+} else {
+	alert("Введіть дійсні числа");
+}
+
+
 
 function exponentiation(number, pow) {
   if (pow > 0) {
@@ -29,7 +36,6 @@ function exponentiation(number, pow) {
     }
   }
 
-exponentiation(number, pow);
 
 
 
